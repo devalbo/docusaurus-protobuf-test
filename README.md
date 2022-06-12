@@ -2,7 +2,11 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-It exists to demonstrate an issue using Protocol Buffer serialization and deserialization from `@protobuf-ts/plugin`. Note that you can use the command `npx protoc --ts_out ./src/proto --proto_path protos protos/msg.proto` to recreate the contents of `src/proto` after modifying the contents of the `protos` directory.
+It exists to demonstrate an issue using Protocol Buffer serialization and deserialization from `@protobuf-ts/plugin`.
+
+The site was initialized by running `npx create-docusaurus@latest docusaurus-protobuf-test classic --typescript`. I then ran `npm install @protobuf-ts/plugin` and added a test page with some `protobuf-ts` code (generated via step below).
+
+ Note that you can use the command `npx protoc --ts_out ./src/proto --proto_path protos protos/msg.proto` to recreate the contents of `src/proto` after modifying the contents of the `protos` directory.
 
 To reproduce this issue, perform the following steps:
 * Clone the repo and run `npm install` from its directory
