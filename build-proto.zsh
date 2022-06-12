@@ -1,0 +1,1 @@
+npx protoc --ts_out ./src/proto --proto_path protos protos/msg.proto
