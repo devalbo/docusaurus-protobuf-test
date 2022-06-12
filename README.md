@@ -11,7 +11,7 @@ The site was initialized by running `npx create-docusaurus@latest docusaurus-pro
 To reproduce this issue, perform the following steps:
 * Clone the repo and run `npm install` from its directory
 * Run `npm run start` and navigate to http://localhost:3000/test. If you open the dev tools, you will see that there are no issues.
-* run `npm run build` and then `npm run serve`. Open the browser dev tools and navigate to http://localhost:3000/test. You will see that an error like the one below shows up in the console.
+* run `npm run build` and then `npm run serve`. Open the browser dev tools and navigate to http://localhost:3000/test and http://localhost:3000/test2. You will see that an error like the one below shows up in the console.
 ```
 Uncaught (in promise) TypeError: class constructors must be invoked with 'new'
     a http://localhost:3000/assets/js/46169e7c.eaa30263.js:1
